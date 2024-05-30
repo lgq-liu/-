@@ -1,0 +1,140 @@
+/* 让页面所有元素的padding和margin都设置为0 */
+*{margin:0;padding:0;box-sizing:border-box;}
+/* 设置背景图，字体设置为微软雅黑 */
+body{
+    background: url(../images/background3.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "微软雅黑", sans-serif;
+}
+.h1 h1{
+    display:block;
+    height:50px;
+    color:#fff;
+    background:#59c;
+    width:100%;
+    font-size:35px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    /*!*background: white;*!*/
+    margin: -150px 0 0 -150px;
+    /*left: calc(50% - 225px);*/
+    width: 450px;
+    height: auto;
+    text-align: center;
+}
+.box-search-button-group{
+    display: flex;
+    align-items: flex-end; /* 将子元素底部对齐 */
+    margin-left: 10px;
+}
+.box-search img{
+    margin-left: 5px;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.box-button-group{
+    display: flex;
+    align-items: flex-end; /* 将子元素底部对齐 */
+    margin-left: 40px;
+    /*margin-right: 10px;*/
+}
+.box-button-group img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.pagination {
+    margin-top: 10px;
+    /*white-space: nowrap; !* 添加这一行来防止页码换行 *!*/
+}
+/* 美化标签样式 */
+.pagination label {
+    display: inline-block; /* 可以设置为 inline 或 inline-block */
+    padding: 5px 10px;
+    background-color: #59c2c5;
+    color: white;
+    border-radius: 5px;
+    border: none; /* 去掉边框 */
+}
+
+/* 美化超链接样式 */
+.pagination a {
+    display: inline-block; /* 可以设置为 inline 或 inline-block */
+    padding: 5px 10px;
+    background-color: #59c2c5;
+    color: white;
+    border-radius: 5px;
+    border: none; /* 去掉边框 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+/* 鼠标悬浮时，改变背景颜色 */
+.pagination a:hover {
+    background-color: #59c2c5;
+}
+
+.pagination a.active {
+    background:#59c2c5;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/*.pagination li a:hover:not(.active) {*/
+/*    background-color: #ddd;*/
+/*}*/
+table{
+    margin-top: 10px;
+    width:100%;
+    border-collapse:collapse;
+}
+table body{
+    diaplay:block;
+    height:300px;
+    overflow-y: scroll;
+}
+table td{
+    border:1px solid #A6A6A6;
+    height:60px;
+    width:auto;
+    text-align: center;
+    font-size: 15px;
+}
+table th{
+    height:60px;
+    border:1px solid #A6A6A6;
+}
+table a{
+    display: inline-block; /* 可以设置为 inline 或 inline-block */
+    padding: 5px 10px;
+    background-color: #59c2c5;
+    color: white;
+    border-radius: 12px;
+    border: none; /* 去掉边框 */
+    text-decoration: none; /* 去掉下划线 */
+}
+/*.sort-icons {*/
+/*    padding-left: 10px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    width: 2rem;*/
+/*    height: 2rem;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+/*.sort-icons span i {*/
+/*    cursor: pointer;*/
+/*}*/
